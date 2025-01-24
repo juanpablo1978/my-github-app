@@ -18,13 +18,13 @@ const Home = () => {
               <input type="text" className="bg-white text-[22px] text-gray-900 w-[358px] h-[115px]
               lg:h-[69px] lg:w-[670px] rounded-md pl-3 relative pb-16 mt-6"
               placeholder="Enter your email"/>
-              <button className="w-[346px] h-[60px] lg:w-[229px] lg:h-[62px] bg-green-700 text-white 
-              font-semibold text-[22px] rounded-md absolute right-[22px] bottom-[130px]
+              <button className="w-[346px] h-[57px] lg:w-[229px] lg:h-[62px] bg-green-700 text-white 
+              font-semibold text-[22px] rounded-md absolute right-[22px] bottom-[126px]
                lg:right-[975px] lg:bottom-[245px]">
                 Sign up for GitHub
                 </button>
                 </div>
-              <button className="w-[357px] lg:w-[229px] h-[68px] bg-indigo-950 text-white font-semibold
+              <button className="w-[357px] lg:w-[229px] h-[64px] bg-indigo-950 text-white font-semibold
                text-[22px]
                rounded-md border-2 border-white mt-4">Try GitHub Copilot</button>
               </article>
