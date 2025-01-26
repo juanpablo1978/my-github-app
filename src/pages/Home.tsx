@@ -1,31 +1,38 @@
+import HomeNavbar from "../layout/HomeNavbar"
+import HomeNavbarMobile from "../layout/HomeNavbarMobile"
 
 
 const Home = () => {
   return (
-    <main className="min-h-screen bg-blue-950 flex justify-center items-center flex-col">
-     
-        <h1 className="text-white text-[45px] lg:text-[85px] font-bold mt-[110px]
-        leading-[50px] lg:leading-[95px] text-center max-w-[400px] lg:max-w-[1400px]">
+    <main className="min-h-screen bg-[#000041] bg-opacity-100 flex justify-center
+     items-center flex-col">
+      <HomeNavbarMobile/>
+      <div className="absolute top-0 hidden lg:block">
+      <HomeNavbar />
+      </div>
+        <h1 className="text-white text-[45px] lg:text-[68px] font-bold mt-[110px] lg:mt-0
+        leading-[50px] lg:leading-[80px] text-center  lg:max-w-[1400px]">
           Build and ship software on a
             <br />
              single, collaborative platform</h1>
-             <h3 className="text-white text-[26px] my-7 font-medium text-center mt-12
+             <h3 className="text-white text-[20px] my-7 font-medium text-center mt-12 lg:mt-6
              mb-4 max-w-[330px] lg:max-w-[1400px]">
                 Join the world’s most widely adopted AI-powered developer platform.
              </h3>
-              <article className=" flex flex-col lg:flex-row flex-wrap justify-center items-center">
-                <div>
-              <input type="text" className="bg-white text-[22px] text-gray-900 w-[358px] h-[115px]
-              lg:h-[69px] lg:w-[670px] rounded-md pl-3 relative pb-16 mt-6"
+              <article className=" flex flex-col lg:flex-row flex-wrap justify-center items-center
+           ">
+               
+              <input type="text" className="bg-white text-[22px] lg:text-[18px] text-gray-900 w-[346px] h-[115px]
+              lg:h-[55px] lg:w-[515px] rounded-md pl-3 relative pb-16 mt-4 lg:mr-[230px] lg:pb-2"
               placeholder="Enter your email"/>
-              <button className="w-[346px] h-[57px] lg:w-[229px] lg:h-[62px] bg-green-700 text-white 
-              font-semibold text-[22px] rounded-md absolute right-[22px] bottom-[126px]
-               lg:right-[975px] lg:bottom-[245px]">
+              <button className="w-[336px] h-[57px] lg:w-[209px] lg:h-[48px] bg-green-700 text-white
+              font-semibold text-[22px] lg:text-[18px] rounded-md absolute right-[26px] bottom-[105px] 
+               lg:right-[718px] lg:bottom-[227px] ">
                 Sign up for GitHub
                 </button>
-                </div>
-              <button className="w-[357px] lg:w-[229px] h-[64px] bg-indigo-950 text-white font-semibold
-               text-[22px]
+                
+              <button className="w-[343px] lg:w-[209px] lg:h-[51px] h-[64px] bg-[#000038] text-white font-semibold
+               text-[22px] lg:text-[18px] lg:absolute lg:left-[1018px] lg:top-[455px]
                rounded-md border-2 border-white mt-4">Try GitHub Copilot</button>
               </article>
               
