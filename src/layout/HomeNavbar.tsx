@@ -38,9 +38,9 @@ const HomeNavbar = () => {
 
          <article className="flex items-center gap-x-5">
             <div className="flex">
-                < CiSearch className="absolute right-[435px] bottom-[9px] text-gray-100 text-[20px] "/>
-                <input className="w-[295px] h-[30px] rounded-md text-white pl-[34px] bg-transparent
-                border-[2px] border-white" 
+                < CiSearch className="absolute right-[435px] bottom-[9px] text-gray-400 text-[20px] "/>
+                <input className="w-[295px] h-[30px] rounded-md text-gray-400 pl-[34px]
+        bg-gray-700 background-blur-sm border-[1px] border-white" 
                 type="text" placeholder="Search or jump to ..." />
             </div>
             <button className="text-[15px]">

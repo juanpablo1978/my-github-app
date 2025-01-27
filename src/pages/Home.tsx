@@ -25,10 +25,10 @@ const Home = () => {
               <input type="text" className="bg-white text-[22px] lg:text-[18px] text-gray-900 w-[346px] h-[115px]
               lg:h-[55px] lg:w-[515px] rounded-md pl-3 relative pb-16 mt-4 lg:mr-[230px] lg:pb-2"
               placeholder="Enter your email"/>
-              <button className="w-[336px] h-[57px] lg:w-[209px] lg:h-[48px] bg-green-700 text-white
+              <button className="w-[336px] h-[57px] lg:w-[209px] lg:h-[48px] bg-green-700 hover:bg-green-800 text-white
               font-semibold text-[22px] lg:text-[18px] rounded-md absolute right-[26px] bottom-[105px] 
                lg:right-[718px] lg:bottom-[227px] ">
-                Sign up for GitHub
+                Sign in for GitHub
                 </button>
                 
               <button className="w-[343px] lg:w-[209px] lg:h-[51px] h-[64px] bg-[#000038] text-white font-semibold
