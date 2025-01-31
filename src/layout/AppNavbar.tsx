@@ -7,7 +7,7 @@ import { BsWindowSidebar } from "react-icons/bs";
 
 //FALTA EL HOVER DEL MENU
 
-const ProfileNavbar = () => {
+const AppNavbar = () => {
   return (
     <nav className="bg-black text-white h-[107px] p-4 border-b-[1px] w-full
      border-gray-600">
@@ -19,7 +19,8 @@ const ProfileNavbar = () => {
             </div>
             <div className="flex items-center gap-x-4">
             <div>
-                < FaSearch className="absolute right-[71px] bottom-[67px] lg:right-[296px] text-gray-400 text-[15px] "/>
+                < FaSearch className="absolute right-[71px] bottom-[803px] lg:right-[298px] lg:bottom-[709px]
+                 text-gray-400 text-[15px] "/>
                 <input className="w-[27px] h-[27px] lg:w-[255px] lg:h-[31px] rounded-md border-[1px] border-gray-300
                 placeholder-transparent lg:placeholder-gray-400 bg-black text-[15px] lg:pl-8"
                  type="text" placeholder="Search repositorie" />
@@ -50,4 +51,4 @@ const ProfileNavbar = () => {
   )
 }
 
-export default ProfileNavbar
+export default AppNavbar

@@ -4,7 +4,7 @@ const CardProfile = () => {
   return (
     <section className=" w-full h-[130px] lg:w-[350px] lg:h-[450px]">
         <article className="flex items-center lg:flex-col text-white bg-[#0D1117] gap-x-4">
-            <div className="rounded-full w-[60px] h-[60px] lg:w-[300px] lg:h-[300px] object-cover
+            <div className="rounded-full w-[60px] h-[60px] lg:w-[300px] lg:h-[300px] object-cover 
              border-[3px] border-gray-700 lg:mb-4">
                 <img className="w-full h-full rounded-full object-cover" 
                  src="src/assets/perfil.png" alt="foto perfil" />
@@ -14,7 +14,7 @@ const CardProfile = () => {
             <h3 className="text-[19px] text-gray-400 font-thin">juanpablo1978</h3>
             </div>
         </article>
-        <article className="flex text-gray-400 items-center gap-x-[6px] font-thin mt-5 lg:justify-center">
+        <article className="flex text-gray-400 items-center gap-x-[6px] font-thin mt-5 lg:mt-[9px] lg:justify-center">
           <div>
           <RiGroupLine/>
           </div>
