@@ -4,6 +4,8 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 import { IoBookOutline } from "react-icons/io5";
 import { GoPackage } from "react-icons/go";
 import { BsWindowSidebar } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 
 //FALTA EL HOVER DEL MENU
 
@@ -33,16 +35,16 @@ const AppNavbar = () => {
             </article>
             <article>
                 <ul className="flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer ">
-                    <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm">
-                    <IoBookOutline className="text-[18px]" /><p>Overview</p></li>
-                <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm">
-                    <RiGitRepositoryLine  className="text-[18px]" />
+                <Link to="Overview">    <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm">
+                    <IoBookOutline className="text-[18px]" /><p>Overview</p></li></Link>
+                    <Link to="Repositories"> <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm">
+                    <RiGitRepositoryLine  className="text-[18px]" /> 
                  <p>Repositories</p> <span className="bg-white/15 background-blur-sm w-6 h-5 rounded-[8px] text-[12px] pl-1 ">12
-                 </span></li>
-             <li className="items-center gap-x-2 hidden lg:flex hover:bg-white/15 background-blur-sm">
-                <BsWindowSidebar className="text-[18px]" /><p>Projets</p></li>
-               <li className=" lg:flex hidden items-center  hover:bg-white/15 background-blur-sm gap-x-2">
-                    <GoPackage  className="text-[18px] " /> <p>Packages</p></li>
+                 </span></li></Link>
+                 <Link to="Projects"> <li className="items-center gap-x-2 hidden lg:flex hover:bg-white/15 background-blur-sm">
+                <BsWindowSidebar className="text-[18px]" /><p>Projects</p></li> </Link>
+                <Link to="Packages"> <li className=" lg:flex hidden items-center  hover:bg-white/15 background-blur-sm gap-x-2">
+                    <GoPackage  className="text-[18px] " /> <p>Packages</p></li></Link>
                 
                 </ul>
             </article>

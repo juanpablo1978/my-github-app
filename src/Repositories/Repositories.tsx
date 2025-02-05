@@ -13,14 +13,14 @@ const favoritesRepos =  useFavoritesReposStore(
   if (isLoading) return <div>Loading...</div>  
 
   return (
-    <div>
+    <main className="min-h-screen bg-[#0D1117] text-white">
     {data?.map(repository => (
       <div key={repository.id} >
        <CardRepos repository={repository}
        isFavorite={favoritesRepos.includes(repository.id)} />
       </div>
     ))}
-    </div>
+    </main>
   )
 }
 

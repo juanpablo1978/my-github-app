@@ -10,7 +10,9 @@ const CardProfile = () => {
                  src="src/assets/perfil.png" alt="foto perfil" />
             </div>
             <div className="lg:text-start">
-            <h2 className="font-bold text-[20px] lg:text-[25px] text-gray-300">Juan Pablo Andrujovich</h2>
+            <h2 className="font-bold text-[20px] lg:text-[25px] text-gray-300">
+              Juan Pablo Andrujovich
+              </h2>
             <h3 className="text-[19px] text-gray-400 font-thin">juanpablo1978</h3>
             </div>
         </article>
@@ -18,7 +20,7 @@ const CardProfile = () => {
           <div>
           <RiGroupLine/>
           </div>
-          <div className="flex gap-x-2 lg:pr-[108px]">
+          <div className="flex gap-x-2 lg:pr-[101px]">
             <div className="flex gap-x-1"><span className="font-semibold text-white">6</span>followers</div>
             <div className="flex gap-x-1"><span className="font-semibold text-white">9</span>following</div>
           </div>
