@@ -5,7 +5,7 @@ import Organizations from "../Organizations/Organizations"
 
 const SideComponent = () => {
   return (
-    <main className="min-h-screen bg-[#0D1117] text-white">
+    <section className="bg-[#0D1117] text-white">
      <article>
         <div className="pt-[50px] lg:pt-[47px] px-4 flex flex-col items-center 
         lg:items-start lg:ml-[181px] lg:mb-[25px]">
@@ -21,11 +21,9 @@ const SideComponent = () => {
         <div className="hidden lg:flex ml-[205px] mt-10 w-60">
           <Organizations/>
         </div>
+        
         </article>
-        <article>
-          
-        </article>
-        </main>
+        </section>
   )
 }
 

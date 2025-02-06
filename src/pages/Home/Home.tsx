@@ -1,5 +1,5 @@
-import HomeNavbar from "../layout/HomeNavbar"
-import HomeNavbarMobile from "../layout/HomeNavbarMobile"
+import HomeNavbar from "../../layout/HomeNavbar/HomeNavbar"
+import HomeNavbarMobile from "../../layout/HomeNavbarMovile/HomeNavbarMobile"
 
 
 const Home = () => {

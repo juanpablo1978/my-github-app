@@ -10,7 +10,7 @@ const Archievements = () => {
        src="src/assets/insignia.png" alt="insignia" />
     </div>
     <div className="w-[33px] h-[22px] text-black bg-red-200 rounded-[12px] cursor-pointer
-     flex justify-center items-center text-[11px] absolute left-12 top-96 lg:left-[264px] lg:top-[712px]">
+     flex justify-center items-center text-[11px] absolute left-[55px] top-96 lg:left-[264px] lg:top-[712px]">
       <p>x2</p>
     </div>
   </div>
