@@ -1,20 +1,30 @@
-import { FaGithub } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
+import { FaGithub, FaSearch } from "react-icons/fa";
 import { RiGitRepositoryLine } from "react-icons/ri";
 import { IoBookOutline } from "react-icons/io5";
 import { GoPackage } from "react-icons/go";
 import { BsWindowSidebar } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import {  NavLink, useLocation } from "react-router-dom";
 
 
 //FALTA EL HOVER DEL MENU
 
 const AppNavbar = () => {
+
+    const pages = [
+        { name: "Overview", path: "/Overview", icon: <IoBookOutline/> },
+        { name: "Repositories", path: "/Repositories", icon: <RiGitRepositoryLine/> },
+        { name: "Projects", path: "/Projects", icon: <BsWindowSidebar/>},
+        { name: "Packages", path: "/Packages", icon: <GoPackage/> },
+      ];
+
+      const location = useLocation()
+
   return (
-    <nav className="bg-black text-white h-[107px] p-4 border-b-[1px] w-full
+    <section className="bg-black text-white h-[107px] p-4 border-b-[1px] w-full
      border-gray-600">
-        <section className="flex flex-col gap-y-5">
-            <article className="flex items-center justify-between">
+    
+        <article className="flex flex-col gap-y-5">
+            <div className="flex items-center justify-between">
                 <div className="flex  gap-x-4 ">
             <FaGithub className="text-[35px]"/>
             <p className="text-[15px]">juanpablo1978</p>
@@ -32,24 +42,30 @@ const AppNavbar = () => {
                 src="src/assets/perfil.png" alt="foto perfil" />
             </div>
             </div>
-            </article>
-            <article>
-                <ul className="flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer ">
-                <Link to="Overview">    <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm">
-                    <IoBookOutline className="text-[18px]" /><p>Overview</p></li></Link>
-                    <Link to="Repositories"> <li className="flex items-center gap-x-2 hover:bg-white/15 background-blur-sm">
-                    <RiGitRepositoryLine  className="text-[18px]" /> 
-                 <p>Repositories</p> <span className="bg-white/15 background-blur-sm w-6 h-5 rounded-[8px] text-[12px] pl-1 ">12
-                 </span></li></Link>
-                 <Link to="Projects"> <li className="items-center gap-x-2 hidden lg:flex hover:bg-white/15 background-blur-sm">
-                <BsWindowSidebar className="text-[18px]" /><p>Projects</p></li> </Link>
-                <Link to="Packages"> <li className=" lg:flex hidden items-center  hover:bg-white/15 background-blur-sm gap-x-2">
-                    <GoPackage  className="text-[18px] " /> <p>Packages</p></li></Link>
-                
-                </ul>
-            </article>
+            </div>
+            
+            <nav>
+                  <ul className="flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer">
+              {pages.map((page, index) => (
+                <li className="flex items-center pb-3 gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm" key={index}>
+                  <NavLink
+                    to={page.path}
+                    className={({isActive}) => isActive && location.pathname === "/Overview" ? ("border-b-[2px] border-orange-400 px-2  cursor-pointer")
+                    : isActive && location.pathname === "/Repositories" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer")
+                    : isActive && location.pathname === "/Projects" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer")
+                    : isActive && location.pathname === "/Packages" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer") : "cursor-pointer px-2"}
+                    >
+                 <div className="flex items-center gap-x-2 pb-3">{page.icon} {page.name}</div>
+
+                  {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}
+                  </NavLink>
+                </li>
+              
+                ))}
+            </ul>
+            </nav>
+        </article>
         </section>
-        </nav>
   )
 }
 

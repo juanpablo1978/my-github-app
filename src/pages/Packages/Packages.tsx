@@ -1,5 +1,8 @@
 import SideComponent from "../../components/Profile/SideComponent/SideComponent"
 import CardPackages from "../../components/Profile/CardPackages/CardPackages"
+import { itemsPackages } from "../../Data/Data"
+
+
 
 
 const Packages = () => {
@@ -8,7 +11,14 @@ const Packages = () => {
       <section className="mb-14">
         <SideComponent/>
         </section>
-        <section className="lg:mt-[128px] lg:mr-[160px]">
+        <section className="lg:mt-[46px] lg:mr-[160px]">
+          <article className="flex justify-center">
+        <div  className="rounded-full w-[72px] h-[72px] lg:w-[74px] lg:h-[74px] object-cover
+       lg:mb-4">
+      <img className="w-full h-full rounded-full object-cover"
+       src="src/assets/packajes-img.png" alt="icono" />
+    </div>
+    </article>
         <h2 className="text-white font-semibold text-[34px] px-7 mb-3 lg:mb-[5px]">
         Get started with
         GitHub Packages
@@ -19,13 +29,16 @@ const Packages = () => {
           privately with your team.
         </p>
         <h4 className="text-[19px] mb-5">Choose a registry</h4>
-        <article className=" flex flex-wrap gap-x-[16px] gap-y-6 justify-center">
-          <CardPackages/>
-          <CardPackages/>
-          <CardPackages/>
-          <CardPackages/>
-          <CardPackages/>
-          <CardPackages/>
+        <article className=" flex flex-wrap gap-x-[16px] justify-center pb-7 lg:pb-0 lg:gap-y-5">
+        {itemsPackages.map((pkg) => (
+        <CardPackages 
+          key={pkg.id} 
+          id={pkg.id} 
+          icon={pkg.icon} 
+          title={pkg.title} 
+          description={pkg.description} 
+        />
+      ))}
         </article>
         </section>
 

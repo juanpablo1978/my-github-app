@@ -6,16 +6,16 @@ const Organizations = () => {
     <h3 className="mb-[5px]">Organizations</h3>
 
     <article className="flex gap-x-[1px]">
-    <div  className="rounded-md w-[36px] h-[36px] object-cover
+  <a href="https://github.com/No-Country"><div  className="rounded-md w-[36px] h-[36px] object-cover
        border-[2px] border-gray-700 lg:mb-4">
       <img className="w-full h-full rounded-md object-cover"
-       src="src/assets/no-country.png" alt="insignia" />
-    </div>
-    <div  className="rounded-md w-[36px] h-[36px]object-cover
+       src="src/assets/no-country.png" alt="no country" />
+    </div></a>  
+  <a href="https://github.com/Aikodev-labs"> <div  className="rounded-md w-[36px] h-[36px]object-cover
        border-[2px] border-gray-700 lg:mb-4">
       <img className="w-full h-full rounded-md object-cover"
-       src="src/assets/aiko.jpeg" alt="insignia" />
-    </div>
+       src="src/assets/aiko.jpeg" alt="aiko" />
+    </div></a> 
     </article>
   </section>
   )

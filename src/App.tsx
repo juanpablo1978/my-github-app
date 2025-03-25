@@ -6,6 +6,7 @@ import Footer from "./layout/Footer/Footer"
 import Repositories from "./Repositories/Repositories"
 import Projects from "./pages/Projects/Projects"
 import Packages from "./pages/Packages/Packages"
+//import Home from "./pages/Home/Home"
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <AppNavbar/>
+   {/* <Route path="/home" Component={Home} />*/}
     <Routes>
     <Route path="/overview" Component={Overview} />
     <Route path="/repositories" Component={Repositories} />
