@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PullSharkCard from "../../PullSharkCard/PullSharkCard";
 import YoloCard from "../../YoloCard/YoloCard";
-import insignia from "/src/assets/insignia.png"
+import insignia from "/src/assets/INSIGNIA.png"
 import yoloInsignia from "/src/assets/yolo.png"
 
 
