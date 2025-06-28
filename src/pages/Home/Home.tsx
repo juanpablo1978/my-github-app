@@ -1,8 +1,12 @@
 import HomeNavbar from "../../layout/HomeNavbar/HomeNavbar"
 import HomeNavbarMobile from "../../layout/HomeNavbarMovile/HomeNavbarMobile"
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
     <main className="min-h-screen bg-[#000041] bg-opacity-100 flex justify-center
      items-center flex-col">
@@ -27,7 +31,8 @@ const Home = () => {
               placeholder="Enter your email"/>
               <button className="w-[336px] h-[57px] lg:w-[209px] lg:h-[48px] bg-green-700 hover:bg-green-800 text-white
               font-semibold text-[22px] lg:text-[18px] rounded-md absolute right-[26px] bottom-[105px] 
-               lg:right-[718px] lg:bottom-[227px] ">
+               lg:right-[718px] lg:bottom-[227px] "
+                  onClick={() => navigate("/overview")}>
                 Sign in for GitHub
                 </button>
                 

@@ -1,4 +1,4 @@
-import { Repository } from "../hooks/types"
+import { Repository } from "../hooks/types" //IMPORTO LOS DATOS DE LA API PARA LA CARD
 import { FaStar,FaRegStar } from "react-icons/fa";
 import { useFavoritesReposStore } from "../store/favoriteRepos";
 
@@ -6,7 +6,7 @@ import { useFavoritesReposStore } from "../store/favoriteRepos";
 //https://chatgpt.com/c/67a3e446-d358-800e-aa04-a8e1252a898a 
 
 interface CardProps{
-    repository: Repository,
+    repository: Repository, //EL TIPO DE DATO DE repository es Repository, porque ya tengo todo tipado desde types.ts
     isFavorite: boolean
 }
 

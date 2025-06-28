@@ -10,7 +10,10 @@ async function fetchRepos() {                                                //e
     return data;
 }
 
-export function useFetchRepositories() {     //es un hook (prefijo use) que me permite usar tanstak-query
+//importo Repository con todos los datos tipados de la API y la utilizo en la funcion fetchRepos para hacer la peticion
+
+export function useFetchRepositories() {     //es un hook (prefijo use) que me permite usar tanstak-query y retorna la biblioteca
+                                             //que importe con sus 2 parametros.     
     return useQuery({queryKey:['repos'],
-                      queryFn: fetchRepos})
+                      queryFn: fetchRepos})  //esta funcion puede ser importada desde cualquier parte de la app para ser utilizada
 }

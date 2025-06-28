@@ -33,10 +33,11 @@ const Packages = () => {
         {itemsPackages.map((pkg) => (
         <CardPackages 
           key={pkg.id} 
-          id={pkg.id} 
           icon={pkg.icon} 
+           iconClassName={pkg.iconClassName}
           title={pkg.title} 
           description={pkg.description} 
+          link={pkg.link}
         />
       ))}
         </article>

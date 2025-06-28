@@ -17,6 +17,12 @@ const AppNavbar = () => {
         { name: "Packages", path: "/Packages", icon: <GoPackage/> },
       ];
 
+      
+    const pagesMobile = [
+        { name: "Overview", path: "/Overview", icon: <IoBookOutline/> },
+        { name: "Repositories", path: "/Repositories", icon: <RiGitRepositoryLine/> },
+      ];
+
       const location = useLocation()
 
   return (
@@ -45,7 +51,7 @@ const AppNavbar = () => {
             </div>
             
             <nav>
-                  <ul className="flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer">
+                  <ul className="lg:flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer hidden">
               {pages.map((page, index) => (
                 <li className="flex items-center pb-3 gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm" key={index}>
                   <NavLink
@@ -54,6 +60,22 @@ const AppNavbar = () => {
                     : isActive && location.pathname === "/Repositories" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer")
                     : isActive && location.pathname === "/Projects" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer")
                     : isActive && location.pathname === "/Packages" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer") : "cursor-pointer px-2"}
+                    >
+                 <div className="flex items-center gap-x-2 pb-3">{page.icon} {page.name}</div>
+
+                  {/* En caso de agregarse mas rutas con distintos estilos de navbar, es acá donde hay que trabajar*/}
+                  </NavLink>
+                </li>
+              
+                ))}
+            </ul>
+                 <ul className="flex text-[15px] gap-x-2 lg:gap-x-6 cursor-pointer lg:hidden">
+              {pagesMobile.map((page, index) => (
+                <li className="flex items-center pb-3 gap-x-2 hover:bg-white/15 background-blur-sm rounded-sm" key={index}>
+                  <NavLink
+                    to={page.path}
+                    className={({isActive}) => isActive && location.pathname === "/Overview" ? ("border-b-[2px] border-orange-400 px-2  cursor-pointer")
+                    : isActive && location.pathname === "/Repositories" ? ("border-b-[2px] border-orange-400 px-2 cursor-pointer") : "cursor-pointer px-"}
                     >
                  <div className="flex items-center gap-x-2 pb-3">{page.icon} {page.name}</div>
 

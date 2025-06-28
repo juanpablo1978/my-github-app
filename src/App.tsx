@@ -1,30 +1,31 @@
-
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import LayoutMain from "./layout/LayoutMain/LayoutMain"
+import LayoutEmpty from "./layout/LayoutEmpty/LayoutEmpty"
+import Home from "./pages/Home/Home"
 import Overview from "./pages/Overview/Overview"
-import AppNavbar from "./layout/AppNavbar/AppNavbar"
-import Footer from "./layout/Footer/Footer"
 import Repositories from "./Repositories/Repositories"
 import Projects from "./pages/Projects/Projects"
 import Packages from "./pages/Packages/Packages"
-//import Home from "./pages/Home/Home"
-
-
 
 const App = () => {
   return (
     <BrowserRouter>
-    <AppNavbar/>
-   {/* <Route path="/home" Component={Home} />*/}
-    <Routes>
-    <Route path="/overview" Component={Overview} />
-    <Route path="/repositories" Component={Repositories} />
-    <Route path="/projects" Component={Projects} />
-    <Route path="/packages" Component={Packages} />
-    </Routes>
-    <Footer/>
+      <Routes>
+        {/* Rutas SIN navbar y footer */}
+        <Route element={<LayoutEmpty />}>
+          <Route path="/" element={<Home />} />
+        </Route>
 
+        {/* Rutas CON navbar y footer */}
+        <Route element={<LayoutMain />}>
+          
+          <Route path="/overview" element={<Overview />} />
+          <Route path="/repositories" element={<Repositories />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/packages" element={<Packages />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-
   )
 }
 

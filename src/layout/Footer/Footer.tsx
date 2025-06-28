@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-   <section className="text-center text-[12px] h-[195px] lg:h-[345px] text-gray-400 pt-9 lg:pt-0
+   <section className="text-center text-[12px] h-[255px] lg:h-[345px] text-gray-400 pt-[100px] lg:pt-0
    px-[17px] bg-[#0D1117] w-full">
 
   <article className="flex justify-center items-center gap-x-5">

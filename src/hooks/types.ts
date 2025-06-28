@@ -1,3 +1,6 @@
+
+//utilice la biblioteca 'json to ts' para tipar todos los datos
+
 export interface Owner {
     login: string;
     id: number;
