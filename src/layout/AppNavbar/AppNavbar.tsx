@@ -4,6 +4,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { GoPackage } from "react-icons/go";
 import { BsWindowSidebar } from "react-icons/bs";
 import {  NavLink, useLocation } from "react-router-dom";
+import perfil from "/src/assets/perfil.png"
 
 
 //FALTA EL HOVER DEL MENU
@@ -45,7 +46,7 @@ const AppNavbar = () => {
             </div>
             <div className="rounded-full w-[35px] h-[35px] object-cover">
                 <img className="w-full h-full rounded-full object-cover" 
-                src="src/assets/perfil.png" alt="foto perfil" />
+                src={perfil} alt="foto perfil" />
             </div>
             </div>
             </div>

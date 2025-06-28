@@ -1,14 +1,18 @@
-// Contributions.tsx
+import image2021 from "/src/assets/2021print.png"
+import image2022 from "/src/assets/2022print.png"
+import image2023 from "/src/assets/contributors23.png"
+import image2024 from "/src/assets/2024-print.png"
+import image2025 from "/src/assets/2025print.png"
 type ContributionsProps = {
   year: number;
 };
 
 const imageByYear: Record<number, string> = {
-  2021: "src/assets/2021print.png",
-  2022: "src/assets/2022print.png",
-  2023: "src/assets/contributors23.png",
-  2024: "src/assets/2024-print.png",
-  2025: "src/assets/2025print.png",
+  2021: image2021,
+  2022: image2022,
+  2023: image2023,
+  2024: image2024,
+  2025: image2025,
 };
 
 const Contributions: React.FC<ContributionsProps> = ({ year }) => {

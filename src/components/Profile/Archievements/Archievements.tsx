@@ -1,6 +1,8 @@
 import { useState } from "react";
 import PullSharkCard from "../../PullSharkCard/PullSharkCard";
 import YoloCard from "../../YoloCard/YoloCard";
+import insignia from "/src/assets/insignia.png"
+import yoloInsignia from "/src/assets/yolo.png"
 
 
 
@@ -29,7 +31,7 @@ const Archievements: React.FC<OverviewProps> = () => {
             onMouseLeave={() => setIsPullSharkOpen(false)}
           >
             <img className="w-full h-full rounded-full object-cover"
-              src="src/assets/insignia.png" alt="insignia" />
+              src={insignia} alt="insignia" />
           </div>
 
           {isPullSharkOpen && (
@@ -52,7 +54,7 @@ const Archievements: React.FC<OverviewProps> = () => {
             onMouseLeave={() => setIsYoloOpen(false)}
           >
             <img className="w-full h-full rounded-full object-cover"
-              src="src/assets/yolo.png" alt="yolo" />
+              src={yoloInsignia} alt="yolo" />
           </div>
 
           {isYoloOpen && (

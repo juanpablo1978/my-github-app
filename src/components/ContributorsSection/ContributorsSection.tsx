@@ -72,6 +72,7 @@ const ContributorsSection = () => {
               >
                 {year}
               </button>
+              
             ))}
           </article>
         </div>

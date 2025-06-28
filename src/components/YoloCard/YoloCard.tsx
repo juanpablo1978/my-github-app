@@ -1,5 +1,6 @@
 import { TfiCup } from "react-icons/tfi";
 import { FaCircle } from "react-icons/fa6";
+import yolo from "/src/assets/yolo.png"
 
 const YoloCard = () => {
   return (
@@ -8,7 +9,7 @@ const YoloCard = () => {
            <article className="w-[347px] h-[182px]  rounded-t-lg flex justify-center items-center bg-red-200 ">
            <div  className="rounded-full w-[135px] h-[135px] object-cover cursor-pointer">
          <img className="w-full h-full rounded-full object-cover"
-          src="src/assets/yolo.png" alt="yolo" />
+          src={yolo} alt="yolo" />
        </div>
            </article>
            <article className="w-[347px] h-[278px] bg-[#101620] rounded-b-lg px-3">
