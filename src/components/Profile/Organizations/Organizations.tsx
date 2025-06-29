@@ -1,5 +1,5 @@
-import aiko from "../../../assets/AIKO.jpeg" 
-import noCountry from "../../../assets/no-country.png"
+import aiko from "../../../../assets/AIKO.jpeg" 
+import noCountry from "../../../../assets/no-country.png"
 
 const Organizations = () => {
   return (
