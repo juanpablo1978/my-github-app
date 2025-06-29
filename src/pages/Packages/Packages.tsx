@@ -1,7 +1,7 @@
 import SideComponent from "../../components/Profile/SideComponent/SideComponent"
 import CardPackages from "../../components/Profile/CardPackages/CardPackages"
 import { itemsPackages } from "../../Data/Data"
-import packagesLogo from "/src/assets/packajes-img.png"
+import packagesLogo from "../../assets/packajes-img.png"
 
 
 

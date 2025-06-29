@@ -4,7 +4,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { GoPackage } from "react-icons/go";
 import { BsWindowSidebar } from "react-icons/bs";
 import {  NavLink, useLocation } from "react-router-dom";
-import perfil from "/src/assets/perfil.png"
+import perfil from "../../assets/perfil.png"
 
 
 //FALTA EL HOVER DEL MENU

@@ -1,6 +1,6 @@
 import { TfiCup } from "react-icons/tfi";
 import { FaCircle } from "react-icons/fa6";
-import yolo from "/src/assets/yolo.png"
+import yolo from "../../assets/yolo.png"
 
 const YoloCard = () => {
   return (

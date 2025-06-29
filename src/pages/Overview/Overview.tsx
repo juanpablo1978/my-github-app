@@ -1,7 +1,6 @@
 
 import CardPopularRepos from "../../components/CardPopularRepos/CardPopularRepos";
 import SideComponent from "../../components/Profile/SideComponent/SideComponent";
-
 import { popularRepositories } from "../../Data/Data";
 import ContributorsSection from "../../components/ContributorsSection/ContributorsSection";
 

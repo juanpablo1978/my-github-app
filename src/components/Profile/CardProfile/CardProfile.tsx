@@ -1,5 +1,5 @@
 import { RiGroupLine } from "react-icons/ri";
-import fotoPerfil from "/src/assets/perfil.png"
+import fotoPerfil from "../../../assets/perfil.png"
 
 const CardProfile = () => {
   return (

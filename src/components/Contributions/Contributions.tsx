@@ -1,8 +1,11 @@
-import image2021 from "/src/assets/2021print.png"
-import image2022 from "/src/assets/2022print.png"
-import image2023 from "/src/assets/contributors23.png"
-import image2024 from "/src/assets/2024-print.png"
-import image2025 from "/src/assets/2025print.png"
+import image2021 from "../../assets/2021print.png"
+import image2022 from "../../assets/2022print.png"
+import image2023 from "../../assets/contributors23.png"
+import image2024 from "../../assets/2024-print.png"
+import image2025 from "../../assets/2025print.png"
+
+//https://chatgpt.com/c/68602e7c-f720-800e-b98a-0e50cd870869
+
 type ContributionsProps = {
   year: number;
 };
