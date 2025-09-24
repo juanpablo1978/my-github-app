@@ -1,7 +1,7 @@
 import SideComponent from "../../components/Profile/SideComponent/SideComponent"
 import CardPackages from "../../components/Profile/CardPackages/CardPackages"
 import { itemsPackages } from "../../Data/Data"
-import packagesLogo from "../../assets/packajes-img.png"
+
 
 
 
@@ -17,7 +17,7 @@ const Packages = () => {
         <div  className="rounded-full w-[72px] h-[72px] lg:w-[74px] lg:h-[74px] object-cover
        lg:mb-4">
       <img className="w-full h-full rounded-full object-cover"
-       src={packagesLogo} alt="icono" />
+        src="/images/packajes-img.png" alt="icono" />
     </div>
     </article>
         <h2 className="text-white font-semibold text-[34px] px-7 mb-3 lg:mb-[5px]">

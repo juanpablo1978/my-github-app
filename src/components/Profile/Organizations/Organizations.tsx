@@ -1,5 +1,4 @@
-import aiko from "../../../../assets/AIKO.jpeg" 
-import noCountry from "../../../../assets/no-country.png"
+
 
 const Organizations = () => {
   return (
@@ -10,12 +9,12 @@ const Organizations = () => {
   <a href="https://github.com/No-Country"><div  className="rounded-md w-[36px] h-[36px] object-cover
        border-[2px] border-gray-700 lg:mb-4">
       <img className="w-full h-full rounded-md object-cover"
-       src={noCountry} alt="no country" />
+        src="/images/nocountry.png" alt="no country" />
     </div></a>  
   <a href="https://github.com/Aikodev-labs"> <div  className="rounded-md w-[36px] h-[36px]object-cover
        border-[2px] border-gray-700 lg:mb-4">
       <img className="w-full h-full rounded-md object-cover"
-       src={aiko} alt="aiko" />
+        src="/images/aiko.jpeg" alt="aiko" />
     </div></a> 
     </article>
   </section>

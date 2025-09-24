@@ -1,6 +1,6 @@
 import { TfiCup } from "react-icons/tfi";
 import { FaCircle } from "react-icons/fa6";
-import pullShark from "../../assets/insignia.png"
+
 
 const PullSharkCard = () => {
   return (
@@ -12,7 +12,7 @@ const PullSharkCard = () => {
         <div  className="rounded-full w-[135px] h-[135px] object-cover cursor-pointer
       lg:mb-4">
       <img className="w-full h-full rounded-full object-cover"
-       src={pullShark} alt="pullshark" />
+       src='/images/insignia.png' alt="pullshark" />
     </div>
         </article>
         <article className="w-[347px] h-[278px] bg-[#101620] rounded-b-lg px-2">

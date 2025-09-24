@@ -1,5 +1,5 @@
 import { RiGroupLine } from "react-icons/ri";
-import fotoPerfil from "../../../assets/perfil.png"
+
 
 const CardProfile = () => {
   return (
@@ -8,7 +8,7 @@ const CardProfile = () => {
             <div className="rounded-full w-[60px] h-[60px] lg:w-[300px] lg:h-[300px] object-cover 
              border-[3px] border-gray-700 lg:mb-4">
                 <img className="w-full h-full rounded-full object-cover" 
-                 src={fotoPerfil} alt="foto perfil" />
+                  src="/images/perfil.png" alt="foto perfil" />
             </div>
             <div className="lg:text-start">
             <h2 className="font-bold text-[20px] lg:text-[25px] text-gray-300">
